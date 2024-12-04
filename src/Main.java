@@ -9,7 +9,8 @@ public class Main {
 				1 - Adição
 				2 - Subtração
 				3 - Multiplicação
-				4 - Divisão
+				4 - 
+				Divisão
 				""";
 		int operation;
 		boolean check;
@@ -18,6 +19,7 @@ public class Main {
 			System.out.println("Insira o primeiro número");
 			number1 = input.nextDouble();
 			System.out.println("Insira o segundo número");
+			number2 = input.nextDouble();
 			System.out.println(menu);
 			operation = input.nextInt();
 			Calculator calculator = new Calculator(number1, number2);
@@ -40,7 +42,17 @@ public class Main {
 					break;
 			}
 
-			check = Calculator.checkInput();
+			System.out.println("Você deseja realizar outra operação? (digite 0 para sairou qualquer outro número para continuar)");
+			int answer = input.nextInt();
+
+			if (answer == 0) {
+				break;
+			}
+check = true;
+
 		} while (check);
+
+		System.out.println("Saindo...");
+		input.close();
 	}
 }
