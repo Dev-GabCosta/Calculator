@@ -23,5 +23,5 @@ Este projeto implementa uma aplicação de calculadora básica em Java. Ele perm
 
 1. Insira o primeiro número e dê enter para que a próxima linha seja lida
 2. Insira o segundo número e dê enter para que a próxima linha seja lida
-3. Insira o operador (+, -, *, /) e dê enter para executar a operação.
+3. De acordo com as opções indicadas, insira o número correspondente à operação que se deseja realizar, e em seguida dê enter para executar a operação.
 
