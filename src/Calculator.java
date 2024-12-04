@@ -9,31 +9,6 @@ public class Calculator {
 		this.NUMBER2 = NUMBER2;
 	}
 
-	public static boolean checkInput() {
-		boolean answer = false;
-		Scanner input = new Scanner(System.in);
-
-		do {
-			int number = input.nextInt();
-
-			switch (number) {
-				case 1:
-					answer = true;
-					break;
-				case 0:
-					answer = false;
-					break;
-				default:
-					System.out.println("Por favor, digite 0 para sair do programa ou 1 para realizar outra operação!");
-					break;
-			}
-
-		} while (number != 0 || number != 1);
-
-		input.close();
-		return answer;
-	}
-
 	public double add() {
 		return this.NUMBER1 + this.NUMBER2;
 	}
@@ -48,9 +23,9 @@ public class Calculator {
 
 	public double divide() {
 
-		if(this.NUMBER2 ==0){
+		if (this.NUMBER2 != 0) {
 			return this.NUMBER1 / this.NUMBER2;
-		}else {
+		} else {
 			System.out.println("Erro! Não é possível dividir por 0!");
 			return -1;
 		}
