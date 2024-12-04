@@ -1,7 +1,8 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
-	public static void main(String[] args) {//TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
+	public static void main(String[] args)  {
 		Scanner input = new Scanner(System.in);
 		double number1, number2;
 		String menu = """
@@ -16,12 +17,15 @@ public class Main {
 		boolean check;
 
 		do {
-			System.out.println("Insira o primeiro número");
-			number1 = input.nextDouble();
-			System.out.println("Insira o segundo número");
-			number2 = input.nextDouble();
-			System.out.println(menu);
-			operation = input.nextInt();
+				System.out.println("Insira o primeiro número");
+				number1 = input.nextDouble();
+				System.out.println("Insira o segundo número");
+				number2 = input.nextDouble();
+				System.out.println(menu);
+				operation = input.nextInt();
+
+
+			}
 			Calculator calculator = new Calculator(number1, number2);
 
 			switch (operation) {
