@@ -48,7 +48,7 @@ public class Main {
 			if (answer == 0) {
 				break;
 			}
-check = true;
+			check = true;
 
 		} while (check);
 
