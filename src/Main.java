@@ -2,7 +2,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
-	public static void main(String[] args)  {
+	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		double number1, number2;
 		String menu = """
@@ -10,22 +10,20 @@ public class Main {
 				1 - Adição
 				2 - Subtração
 				3 - Multiplicação
-				4 - 
-				Divisão
+				4 - Divisão
+				5 - Potenciação
+				6 - Radiciação
 				""";
 		int operation;
 		boolean check;
 
 		do {
-				System.out.println("Insira o primeiro número");
-				number1 = input.nextDouble();
-				System.out.println("Insira o segundo número");
-				number2 = input.nextDouble();
-				System.out.println(menu);
-				operation = input.nextInt();
-
-
-			}
+			System.out.println("Insira o primeiro número");
+			number1 = input.nextDouble();
+			System.out.println("Insira o segundo número");
+			number2 = input.nextDouble();
+			System.out.println(menu);
+			operation = input.nextInt();
 			Calculator calculator = new Calculator(number1, number2);
 
 			switch (operation) {
@@ -40,6 +38,12 @@ public class Main {
 					break;
 				case 4:
 					System.out.println(calculator.divide());
+					break;
+				case 5:
+					System.out.println(calculator.pow());
+					break;
+				case 6:
+					System.out.println(calculator.square());
 					break;
 				default:
 					System.out.println("Erro: operação inválida!");

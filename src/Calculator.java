@@ -31,4 +31,11 @@ public class Calculator {
 		}
 	}
 
+	public double pow(){
+		return Math.pow(this.NUMBER1, this.NUMBER2);
+	}
+
+	public double square(){
+		return Math.sqrt(this.NUMBER1);
+	}
 }
