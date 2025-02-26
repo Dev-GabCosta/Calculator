@@ -1,4 +1,5 @@
-import java.util.InputMismatchException;
+package com.calculator;
+
 import java.util.Scanner;
 
 public class Main {
@@ -24,7 +25,7 @@ public class Main {
 			number2 = input.nextDouble();
 			System.out.println(menu);
 			operation = input.nextInt();
-			Calculator calculator = new Calculator(number1, number2);
+			main.java.com.calculator.Calculator calculator = new main.java.com.calculator.Calculator(number1, number2);
 
 			switch (operation) {
 				case 1:

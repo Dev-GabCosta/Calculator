@@ -1,4 +1,4 @@
-import java.util.Scanner;
+package main.java.com.calculator;
 
 public class Calculator {
 	private final double NUMBER1;

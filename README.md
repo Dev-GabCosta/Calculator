@@ -17,7 +17,7 @@ Este projeto implementa uma aplicação de calculadora básica em Java. Ele perm
 
 1. Faça o clone do repositório em sua máquina local
 2. Abra o projeto no IntelliJ IDEA
-3. Execute o arquivo `Main.java`
+3. Execute o arquivo `main.java.com.calculator.Main.java`
 
 ## Uso
 
